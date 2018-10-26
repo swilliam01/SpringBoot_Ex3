@@ -10,15 +10,12 @@
       th:object="${listToday}"
       method="post">
     <input type="hidden" th:field="*{id}" />
-
     Task Name:<input type="text" th:field="*{taskName}" />
     <span th:if="${#fields.hasErrors('taskName')}"
           th:errors="*{taskName}"></span><br />
-
     Due Date:<input type="text" th:field="*{dueDate}" />
     <span th:if="${#fields.hasErrors('dueDate')}"
           th:errors="*{dueDate}"></span><br />
-
     Set Priority :<input type="text" th:field="*{priority}" />
     <span th:if="${#fields.hasErrors('priority')}"
           th:errors="*{priority}"></span><br />
